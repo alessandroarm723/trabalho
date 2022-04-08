@@ -12,9 +12,9 @@ programa {
             Mturma = 0
             Mindice = 0
 
-            para (Mturma = 0; Mturma <= 1; Mturma ++)
+            para (Mturma = 0; Mturma <= 2; Mturma ++)
             {
-                para (Mindice = 0; Mindice < 2; Mindice ++)
+                para (Mindice = 0; Mindice < 5; Mindice ++)
                 {
                 escreva ("Digite um nome: ")
                 leia (Mnome[Mturma][Mindice])
@@ -36,15 +36,25 @@ programa {
                 }
 
             }
-                para (Mturma = 0; Mturma <= 1; Mturma ++)
-           {
-               
-                escreva ("\nAlunos da turma: ", Mturma)
-               
-                para (Mindice = 0; Mindice <= 1; Mindice ++)
+                        para (Mturma = 0; Mturma <= 2; Mturma ++)
+            {
+                para (Mindice = 0; Mindice < 5; Mindice ++)
                 {
-                    escreva ("\nAluno: ", Mnome[Mturma][Mindice])
+               escreva ( Mnome[Mturma][Mindice])
+
+                    se (Mfisica[Mturma][Mindice]<= 60)
+
+                    escreva ("\naprovado")
+
+                    senao
+
+                    escreva ("\nreprovado")
+
+
+                    
+                    
                 }
             }
+
     }
 }
